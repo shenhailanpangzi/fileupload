@@ -1,0 +1,14 @@
+spring:
+  activemq:
+    user: admin
+    password: admin
+    broker-url: tcp://localhost:61616  #61616为消息代理接口
+    pool:
+      enabled: true
+      max-connections: 10
+  jms:
+    pub-sub-domain: true  #默认只能发送和接收queue消息，如果要发送和接收topic消息要配置为true
+#      expiry-timeout:
+#      idle-timeout:
+#queueName: publish.queue
+#topicName: publish.topic
